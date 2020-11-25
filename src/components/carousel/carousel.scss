@@ -1,0 +1,33 @@
+.BrainhubCarousel__arrowLeft{
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    background-color: #c5c3c3;
+    opacity: 0.8;
+}
+
+.BrainhubCarousel__arrowRight{
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    background-color: #c5c3c3;
+    opacity: 0.8;
+}
+
+.BrainhubCarousel__arrowLeft:hover, .BrainhubCarousel__arrowRight:hover{
+    opacity: 1;
+    background-color: #9c9c9c !important;
+}
+
+.gatsby-image-wrapper{
+    height: 100%;
+}
+
+@media(max-width: 800px){
+    
+    .BrainhubCarousel__arrowRight, .BrainhubCarousel__arrowLeft{
+        display: none;
+    }
+}
+
+

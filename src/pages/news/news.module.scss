@@ -1,0 +1,165 @@
+.newsContainer{
+    background-color:#f7f6ee ;
+    padding: 4rem 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h5{
+        opacity: 0.5;
+        font-weight: 600;
+    }
+
+    h1{
+        padding-top: 3rem;
+        font-size: 2.2rem;
+    }
+
+    .categories{
+        display: flex;
+
+        li{
+            margin: 1.3rem 0.7rem;
+            font-size: 0.7rem;
+            
+            .categoriesBtn{
+                font-size: 0.7rem;
+                font-weight: 500;
+                opacity: 0.7;
+                outline: none;
+                border: none;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        :nth-child(1){
+            list-style: none;
+        }
+    }
+
+    .masonryContainer{
+        width: 100%;
+        max-width: 850px;
+        position: relative;
+
+        @media(max-width: 850px){
+            max-width: 580px;
+        }
+
+        @media(max-width: 580px){
+            max-width: 280px;
+        }
+    }
+
+
+    
+    
+
+    .card{
+        margin: 1rem;
+        max-width: 250px;
+        min-width: 250px;
+        background-color:white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        break-inside: avoid;
+        
+
+        .emailCard{
+            background-color: #21343d;
+            color: white;
+            text-align: left;
+            padding: 1rem;
+            .title{
+                font-size: 1.26rem;
+                font-weight: 600;
+            }
+
+            form{
+                padding-top: 1rem;
+            }
+
+            label{
+                display: block;
+                font-size: 0.65rem;
+                opacity: 0.6;
+                padding-bottom: 0.5rem;
+            }
+            input{
+                display: block;
+                width: 100%;
+                padding: 0.4rem 0.3rem;
+                background-color: rgb(78, 92, 98);
+                color: white;
+                outline: none;
+                border: none;
+                margin-bottom: 0.8rem;
+
+                &::placeholder{
+                    color: white;
+                    opacity: 0.7;
+                }
+            }
+
+            button{
+                padding: 0.5rem;
+                font-size: 0.8rem;
+                outline: none;
+                border: none;
+                background-color: #0d6ece;
+                width: 100%;
+                color: rgba(255, 255, 255, 0.8);
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+
+        .cardContent{
+            padding: 1rem;
+            text-align: left;
+            
+
+            .category{
+                font-size: 0.7rem;
+                font-weight: 600;
+                opacity: 0.6;
+                padding-bottom: 0.5rem;
+            }
+
+            .title{
+                font-size: 1.2rem;
+                
+            }
+
+            ul{
+                display: flex;
+                padding-top: 1rem;
+                padding-bottom: 0.3rem;
+                li{
+                    font-size: 0.7rem;
+                    
+                    a{
+                        font-weight: 600;
+                        opacity: 0.7;
+                    }
+                }
+                :nth-child(1){
+                    list-style: none;
+                }
+                :nth-child(2){
+                    margin-left: 1.3rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+}

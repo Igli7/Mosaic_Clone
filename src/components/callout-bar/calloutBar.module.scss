@@ -1,0 +1,59 @@
+.calloutSection{
+    background-color: #21343d;
+    width: 100vw;
+
+
+   
+}
+
+.calloutBar{
+    display: flex;
+    max-width: 1140px;
+    flex-wrap: wrap;
+    color: white;
+    margin: 0 auto;
+
+    
+
+    .mainContainer{
+        flex: 0 1 50%;
+        text-align: left;
+        padding: 3.5rem 4rem 3rem;
+        max-width: 960px;
+
+
+        p{
+            line-height: 1.5rem;
+            font-weight: 500;
+        }
+    }
+        
+}
+
+.h1Container{
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    .imgContainer{
+        width: 50px;
+        height: 50px;
+        margin-right: 0.4rem;
+    }
+}
+
+@media(max-width: 768px){
+    .calloutBar{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        max-width: 550px;
+        padding: 3rem 0;
+
+        .mainContainer{
+            padding-top: 2rem;
+            padding-bottom: 0.8rem;
+        }
+    }
+}

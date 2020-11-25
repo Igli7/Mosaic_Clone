@@ -1,0 +1,57 @@
+.CarouselSection{
+    background-color: #f7f6ee;
+    padding-bottom: 4rem;
+}
+
+
+
+.cardContainer{
+    background-color: white !important;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 480px;
+    margin: 0 1.5rem;
+
+    .cardImage{
+        flex: 0 1 50%;
+        min-height: 100%;
+    }
+
+    .cardContent{
+        flex: 0 1 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 1rem;
+        padding-right: 10%;
+
+        .content{
+            line-height: 23px;
+        }
+
+        .author, .position{
+            font-size: 0.8rem;
+            font-weight: 200;
+        }
+        .author{
+            padding-top: 3rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .cardContainer{
+        flex-direction: column;
+        flex-wrap: unset;
+        width: 400px;
+        margin-left: -30%;
+
+        .cardImage{
+            min-height: auto;
+            min-width: 100%;
+        }
+    }
+}

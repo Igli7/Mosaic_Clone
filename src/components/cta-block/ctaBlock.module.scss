@@ -1,0 +1,17 @@
+.ctaSection {
+    background-color: #f7f6ee;
+}
+
+.ctaBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 360px;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+
+    h2{
+        font-weight: 700;
+    }
+}

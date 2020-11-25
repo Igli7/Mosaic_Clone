@@ -1,0 +1,122 @@
+.footer{
+    background-color: #091f28;
+    padding-bottom: 2rem;
+    width: 100vw;
+
+    .allRightsSpan{
+        color: white;
+        display: block;
+        padding-top: 4rem;
+    }
+}
+
+.header{
+    margin: 0 auto;
+    padding: 1.5rem 0.95rem;
+    max-width: 93vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    color: white;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);
+}
+
+.allRights{
+    display: none;
+}
+
+.imgContainer{
+    min-width: 151px;
+    min-height: 40px;
+    cursor: pointer;
+}
+
+.footerContainer{
+    color: white;
+    text-align: left;
+
+    h4{
+        font-weight: 700;
+        padding: 1.2rem 0 1rem;
+    }
+
+    li{
+        list-style: none;
+        padding: 0.25rem 0;
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+
+    .pages, .licenses, .contacts, .offices{
+        padding: 1rem;   
+    }
+
+    .licenseContainer{
+        padding: 0.35rem 0rem;
+        display: flex;
+        justify-content: space-between;
+
+        dd{
+            padding-right: 1.2rem;
+        }
+    }
+
+    .officesContainer{
+        display: flex;
+        flex-direction: row;
+
+        address {
+            flex: 0 1 50%;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    
+    
+
+}
+
+@media (min-width: 768px){
+    .allRightsSpan{
+        display: none !important;
+    }
+    .allRights{
+        display: block;
+    }
+    .footerContainer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100vw;
+
+        .pages, .licenses, .contacts, .offices{
+            flex: 0 1 200px;
+        }
+        .pages{
+            min-width: 200px;
+        }
+        .contacts{
+            min-width: 200px;
+        }
+        .offices{
+            min-width: 500px;
+            margin-right: 3rem;
+        }
+        .licenses {
+            min-width: 500px;
+            margin-right: 3rem;
+        }
+    }
+    }
+    
+
